@@ -167,7 +167,7 @@ function AddEditExam() {
                   <Form.Item label="Category" name="category">
                     <select name="" id="">
                       <option value="">Select Category</option>
-                      <option value="Javascript">Javascript</option>
+                      <option value="Javascript">DAA</option>
                       <option value="React">React</option>
                       <option value="Node">Node</option>
                       <option value="MongoDB">MongoDB</option>

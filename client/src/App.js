@@ -18,6 +18,7 @@ import WriteExam from "./pages/user/WriteExam";
 import UserReports from "./pages/user/UserReports";
 import AdminReports from "./pages/admin/AdminReports";
 import Visualize from "./pages/common/Visualize/Visualize";
+import RealHome from "./pages/common/RealHome/RealHome";
 
 function App() {
   const { loading } = useSelector((state) => state.loader);
@@ -30,6 +31,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/visualize" element={<Visualize />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/home" element={<RealHome />} />
+
 
           {/* User Routes */}
           <Route

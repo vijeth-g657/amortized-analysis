@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Visualize.css';
-// import amor1Image from '../images/amor1.jpg'; 
+import amor1Image from './amor1.jpg'; 
 
 
 
@@ -65,7 +65,7 @@ const Visualize = () => {
       setInputVisible(false);
       setAnimationClass('');
       setTemp('');
-    }, 3000);
+    }, 2500);
   };
 
   const pop = () => {
@@ -91,7 +91,7 @@ const Visualize = () => {
       setResultValue(amortizedCost);
       setAnimationClass('');
       setTemp('');
-    }, 1000);
+    }, 2500);
   };
 
   const calculatePushAmortizedCost = (x, y) => {
@@ -105,11 +105,22 @@ const Visualize = () => {
   return (
     <div className="container">
       <div className="left-side">
-        <div className="buttons">
-          <button onClick={toggleInputField}>Push</button>
+        <div className="buttons" style={{
+          margin: 'auto',
+          marginBottom:30,
+          width:152,
+          display: 'flex'
+        }}>
+          <button id='vijeth' onClick={toggleInputField} style={
+            {
+              marginRight: 4,
+            }
+          }>Push</button>
           {inputVisible && (
             <>
-              <input
+              <input style={{
+                width:100
+              }}
                 type="text"
                 id="inputField"
                 placeholder="Enter"
@@ -117,7 +128,11 @@ const Visualize = () => {
                 onChange={(e) => setInputValue(e.target.value)}
               />
               <br />
-              <button onClick={push} id="confirmPush">
+              <button onClick={push} id="confirmPush" style={{
+                padding:0,
+                fontSize:10,
+                height:100
+              }}>
                 Confirm Push
               </button>
             </>
@@ -133,7 +148,9 @@ const Visualize = () => {
         </div>
       </div>
       <div className="right-side">
-        <h2>Amortized Cost Calculation</h2>
+        <h2 style={{
+          color:'white'
+        }}>Amortized Cost Calculation</h2>
         <div className = {`enlarge ${temp}`} id="formula-values">
           <p>
             Φ(hi) = <span id="y-value">{yValue}</span>, Φ(hi-1) = <span id="x-value">{xValue}</span>,
@@ -144,7 +161,7 @@ const Visualize = () => {
           where, <br /> Φ(hi) Number of elements after operation
         </p>
         <p>Φ(hi-1) Number of elements before operation</p>
-        <img src={'./a'} alt="Description of your image" />
+        <img src={amor1Image} alt="Description of your image" />
         <p>
           where, <br /> Φ(h) is potential function
         </p>

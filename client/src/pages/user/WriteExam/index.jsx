@@ -31,7 +31,8 @@ function WriteExam() {
       if (response.success) {
         // const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
         const shuffledQuestions = response.data.questions.sort(() => Math.random() - 0.5);
-        setQuestions(shuffledQuestions);
+        const modified = shuffledQuestions.slice(0, 5);
+        setQuestions(modified);
         // setQuestions(response.data.questions);
         setExamData(response.data);
         setSecondsLeft(response.data.duration);

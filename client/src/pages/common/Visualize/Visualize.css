@@ -7,10 +7,18 @@ body {
     background-color: rgb(127, 232, 232);
 }
 
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
 img {
-    max-width: 100%;
+    max-width: 100%; 
     height: 30px;
-    display: block;
+    display: block; 
     margin: 0 auto;
 }
 
@@ -23,16 +31,16 @@ img {
 
 .right-side {
     background-color: black;
-    flex: 1;
+    flex: 1; 
     padding: 20px;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #ccc; 
     height: 800px;
-}
+}   
 
 .stack-container {
     width: 40%;
     margin: auto;
-    height: 400px;
+    height: 400px; 
     border: 1px solid #000;
     overflow: hidden;
     background-color: rgb(227, 202, 149);
@@ -49,7 +57,15 @@ button {
     padding: 10px 20px;
     margin-right: 10px;
     background-color: yellow;
-    color: black;
+    color: green
+}
+
+#vijeth:hover{
+    background-color: green;
+}
+
+#confirmPush:hover{
+    background-color: green;
 }
 
 button:hover {
@@ -58,35 +74,25 @@ button:hover {
 }
 
 .stack-item {
-    width: 100%;
-    height: 50px;
-    background-color: #ccc;
+    width: 100%; 
+    height: 50px; 
+    background-color: #ccc; 
     border: 1px solid #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 0; 
     border-color: orange;
 }
 
 @keyframes push {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
 }
 
 @keyframes pop {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .push-animation {
@@ -111,59 +117,52 @@ button:hover {
     margin-right: 10px;
 }
 
-.right-side h2 {
-    margin-top: 0;
-}
 
-h2 {
+
+/* h2 {
     color: white;
 }
 
 p {
     color: white;
-}
+} */
 
 .animation-container {
     display: none;
     /* animation-duration: 5s; */
     transition: all 1s ease;
-}
-
-.animation-container.show-animation {
+  }
+  
+  .animation-container.show-animation {
     display: block;
     opacity: 1;
     transform: translateY(0);
-}
-
-.animation-container p {
+  }
+  
+  .animation-container p {
     margin: 5px 0;
-}
+  }
 
-.animation-running .formula-values {
+  .animation-running .formula-values {
     /* Define your style changes here */
-    border: 2px solid red;
-    /* Example: Red border */
-    padding: 10px;
-    /* Example: Increased padding */
+    border: 2px solid red; /* Example: Red border */
+    padding: 10px; /* Example: Increased padding */
     color: crimson;
-}
-
-.animation-container.show-animation {
+  }
+  .animation-container.show-animation {
     display: block;
     opacity: 1;
     transform: translateY(0);
-}
+  }
 
-.enlarge.temp p {
-    font-size: 1.2em;
-    /* Example: Increase font size */
-    font-weight: bold;
-    /* Example: Make text bold */
+  .enlarge.temp p {
+    font-size: 1.2em; /* Example: Increase font size */
+    font-weight: bold; /* Example: Make text bold */
     /* Add any other styles to enlarge the <p> tags */
-}
+  }
 
 
-.split {
+  .split {
     display: flex;
     flex-direction: row;
 }

@@ -1,0 +1,40 @@
+/* src/components/Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background: linear-gradient(to right, #00c6ff, #0072ff); */
+    color: white;
+    text-align: center;
+    background-image: url('https://img.freepik.com/free-vector/creative-geometric-design-space_53876-89781.jpg?w=996&t=st=1720980475~exp=1720981075~hmac=da1a998e95a807607aede756c9f547118751f9042ba3a627e708477943925b98');
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+    color: black;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f14747;
+  }
+  
