@@ -1,8 +1,26 @@
+# Amortized Analysis Project
 
-# Amortized Analysis
-Quiz-Application Using MERN Stack Technology: In this project there are two portals one for admin and one for user <br><b>Admin:</b> admin can create quiz , add question to the quiz , modify the quiz , modify the answers or questions and can view reports of all users <br><b>User:</b> user can login and attempt the quiz and view the result and find the answers of all the question  quiz completion
-##How to run this 
-#
+This project demonstrates the amortized analysis of stack operations and a binary counter, with visualizations and an interactive quiz that fetches random questions from a database.
+
+## Features
+
+1. **Amortized Cost Calculation**:
+   - **Stack Operations**: Calculates the amortized cost of push and pop operations.
+   - **Binary Counter**: Calculates the amortized cost of increment operations.
+
+2. **Visualization**:
+   - Visualizes the amortized cost analysis for both stack and binary counter operations.
+
+3. **Quiz**:
+   - Fetches random questions from a database.
+   - Allows users to take a test and submit answers.
+
+## Technologies Used
+
+- **Frontend**: React.js, Chart.js
+- **Backend**: Node.js, Express.js, MongoDB
+- **Database**: MongoDB
+
 ## Installation
 
 ```bash
@@ -23,32 +41,3 @@ npm start
 
 # Server runs on  http://localhost:3000
 ```
-
-
-
-<i><h2>1) Registration Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/register.png"/>
-<i><h2>2) Login Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/login.png"/>
-<i><h2>3) Admin Profile Home Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_homepage.png"/>
-<i><h2>4) Add Quiz Page in which Admin Post the Quiz into the MongoDB Database</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_add_exam.png"/>
-<i><h2>5) Add Questions in Quiz </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_add_ques.png"/>
-<i><h2>6) Edit Exam by Admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_edit_exam.png"/>
-<i><h2>7) Edit Que by Admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_edit_que.png"/>
-<i><h2>8) User's Profile </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_home.png"/>
-<i><h2>9) Instructions before exam </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/User_instruction.png"/>
-
-<i><h2>10) User Result</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_result.png"/>
-
-<i><h2>11) Reports of all users that can be seen by only admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_report.png"/>
-<i><h2>12) User can see only his/her report </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_report.png"/>
