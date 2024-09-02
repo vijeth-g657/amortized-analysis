@@ -1,15 +1,14 @@
 # Amortized Analysis Project
 
-This project demonstrates the amortized analysis of stack operations and a binary counter, with visualizations and an interactive quiz that fetches random questions from a database.
+This project demonstrates the amortized analysis of stack operations with visualizations and an interactive quiz that fetches random questions from a database.
 
 ## Features
 
 1. **Amortized Cost Calculation**:
    - **Stack Operations**: Calculates the amortized cost of push and pop operations.
-   - **Binary Counter**: Calculates the amortized cost of increment operations.
 
 2. **Visualization**:
-   - Visualizes the amortized cost analysis for both stack and binary counter operations.
+   - Visualizes the amortized cost analysis for stack operations.
 
 3. **Quiz**:
    - Fetches random questions from a database.
